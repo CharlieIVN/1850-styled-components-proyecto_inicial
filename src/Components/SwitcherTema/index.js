@@ -1,12 +1,11 @@
 import React from "react";
-import themeOn from "../../assets/images/themeOn.svg"
-import themeOff from "../../assets/images/themeOff.svg"
-import {icon} from "../UI"
+import themeOn from "../../assets/images/themeOn.svg";
+import themeOff from "../../assets/images/themeOff.svg";
+import { Icono } from "../UI";
 
+export default ({ tema }) => {
+  const claro = <Icono src={themeOn} alt="Tema claro" />;
+  const oscuro = <Icono src={themeOff} alt="Tema oscuro" />;
 
-export default (tema) => {
-    const claro = <icon src={themeOn} alt= "Tema claro"/>
-    const oscuro = <icon src={themeOff} alt= "Tema oscuro"/>
-
-    return <> {tema ? oscuro : claro}</>;
-}
+  return <>{tema ? oscuro : claro}</>;
+};

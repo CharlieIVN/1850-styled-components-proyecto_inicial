@@ -1,9 +1,8 @@
 import styled from "styled-components"
 
-const title = styled.h1`
-color: grey;
-padding: 25px 0;
+const Title = styled.h1`
+color:${({theme}) => theme.text};
+  padding: 25px 0;
 `
 
-
-export default title;
+export default Title;
